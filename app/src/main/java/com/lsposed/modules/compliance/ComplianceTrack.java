@@ -15,6 +15,14 @@ public class ComplianceTrack {
     private static final Set<String> whiteList = new HashSet<>();
 
     static {
+        whiteList.add("com.msxf.loan");
+        whiteList.add("com.msxf.loan.internal.dev");
+        whiteList.add("com.msxf.ayh");
+        whiteList.add("com.msxf.ayh.internal");
+        whiteList.add("com.msxf.msg");
+        whiteList.add("com.msxf.msg.internal");
+        whiteList.add("com.msxf.newzy");
+        whiteList.add("com.msxf.newzy.internal.dev");
     }
 
     public static void handleLoadPackage(XC_LoadPackage.LoadPackageParam loadPackageParam) {
